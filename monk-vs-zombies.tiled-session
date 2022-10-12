@@ -1,0 +1,50 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "public/assets/levels/level-1.tmj",
+    "expandedProjectPaths": [
+        "public/assets/levels",
+        ".",
+        "public",
+        "public/assets"
+    ],
+    "fileStates": {
+        "": {
+            "scaleInEditor": 1
+        },
+        "public/assets/levels/level-1.tmj": {
+            "scale": 1.5,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": -5.333333333333314,
+                "y": 148.33333333333331
+            }
+        },
+        "public/assets/levels/level-1.tmj#Tron": {
+            "scaleInDock": 1
+        }
+    },
+    "last.exportedFilePath": "C:/Users/rolch/coding/munk-vs-zombie/public/assets/levels",
+    "last.imagePath": "C:/Users/rolch/coding/munk-vs-zombie/public/assets/images",
+    "map.height": 20,
+    "map.lastUsedExportFilter": "JSON map files (*.tmj *.json)",
+    "map.lastUsedFormat": "json",
+    "map.tileHeight": 16,
+    "map.tileWidth": 16,
+    "map.width": 128,
+    "openFiles": [
+        "public/assets/levels/level-1.tmj"
+    ],
+    "project": "monk-vs-zombies.tiled-project",
+    "property.type": "bool",
+    "recentFiles": [
+        "public/assets/levels/level-1.tmj"
+    ],
+    "tileset.embedInMap": true,
+    "tileset.tileSize": {
+        "height": 16,
+        "width": 16
+    }
+}
