@@ -1,6 +1,4 @@
 import Phaser from 'phaser';
-import Animation from '../constants/AnimationKeys';
-import Texture from '../constants/TexturesKeys';
 import Monk from '../game-objects/Monk';
 
 export default class Game extends Phaser.Scene {
@@ -40,6 +38,10 @@ export default class Game extends Phaser.Scene {
     const spawnPoint = map.findObject('objects', (obj) => obj.name === 'spawn point');
     if (spawnPoint === null) throw Error('Spawnpoint not found');
     this.monk = new Monk(this, spawnPoint.x || 0, spawnPoint.y || 0);
+    this.cameras.main.setZoom(1);
+    this.cameras.main.setBounds(0, 0, map.widthInPixels, map.heightInPixels);
+    this.cameras.main.startFollow(this.monk.sprite);
+    this.matter.world.setBounds(0, 0, map.widthInPixels, map.heightInPixels);
   }
 
   update() {

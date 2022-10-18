@@ -42,6 +42,7 @@
     "recentFiles": [
         "public/assets/levels/level-1.tmj"
     ],
+    "resizeMap.removeObjects": true,
     "tileset.embedInMap": true,
     "tileset.tileSize": {
         "height": 16,

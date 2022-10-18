@@ -4,6 +4,7 @@ const physicsObj = {
   default: 'matter',
   matter: {
     debug: true,
+    gravity: {},
   },
 };
 
