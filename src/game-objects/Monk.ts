@@ -12,8 +12,15 @@ export default class Monk {
   private isJumpKeyDown: any;
 
   constructor(scene: Phaser.Scene, x: number, y: number) {
-    this.sprite = scene.matter.add.sprite(x, y, Texture.Monk).setScale(2).setSize(10, 10).setFixedRotation();
+    this.sprite = scene.matter.add.sprite(x, y, Texture.Monk).setScale(2);
 
+    // Body setup for the monk
+    const bodies = scene.matter.bodies;
+    const rect = bodies.rectangle(x, y, 32, 64, { chamfer: { radius: 10 } });
+    const sensorA = bodies.rectangle(x, y, 2, 64, { isSensor: true });
+    this.sprite.setExistingBody(rect);
+    // Prevents the monk from rolling around when moving
+    this.sprite.setFixedRotation();
     // Create animations from asesprite file - only added to this sprite
     this.sprite.anims.createFromAseprite(Texture.Monk);
 
